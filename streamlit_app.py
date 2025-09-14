@@ -6,8 +6,7 @@ st.set_page_config(page_title="DS Example", page_icon="🎈")
 
 @st.cache_data
 def load_data():
-    df = pd.DataFrame([1,2,3,4])
-    # df = pd.read_csv("data/movies_genres_summary.csv")
+    df = pd.read_csv("sleep_stree_readiness.csv")
     return df
 
 
