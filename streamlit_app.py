@@ -1,4 +1,4 @@
-import pandas as pd
+uresimport pandas as pd
 import streamlit as st
 
 st.set_page_config(page_title="DS Example", page_icon="🎈")
@@ -23,5 +23,15 @@ st.write(
 st.subheader("Linegraph of single feature over entire timespan")
 st.write("The following interactive linegraph visualizes the selected features over the entire timespan of the dataset")
 
-st.pills("")
+options = {"Deep Sleep in Minutes": 'deep_sleep_in_minutes', 
+           "Overall Score": 'overall_score',
+           "Readiness Score": 
+           'readiness_score_value'}]
+
+
+
+plot_feature = st.pills("Selected Features", list(options.keys()),selection_mode="single")
+st.markdown(f"The plot now shows: {plot_feature}.")
+st.line_chart(df[plot_feature])
+
 
