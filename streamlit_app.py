@@ -41,4 +41,4 @@ st.line_chart(data=df, y=options[plot_feature], x="Date")
 ###### Section 2 all features over entire timespan
 st.subheader("Linegraph of all features over entire timespan")
 st.markdown(df.columns)
-st.line_chart(data=df, y=df[value for value in list(options.values())], x="Date")
+st.line_chart(df, y=[value for value in list(options.values())], x="Date")
