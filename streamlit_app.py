@@ -17,8 +17,7 @@ st.title("🎈 A Data Science Demo Project using Streamlit")
 st.title("This is a sample project using human data")
 
 st.write(
-    "This is the demo for an interactive website.
-    This is a sample project on human data showcasing the features readiness, stress and overall scores defined by FitBit. Enjoy."
+    "This is the demo for an interactive website. This is a sample project on human data showcasing the features readiness, stress and overall scores defined by FitBit. Enjoy."
 )
 
 st.subheader("Linegraph of single feature over entire timespan")
