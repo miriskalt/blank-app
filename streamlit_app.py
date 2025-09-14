@@ -26,7 +26,7 @@ st.write("The following interactive linegraph visualizes the selected features o
 options = {"Deep Sleep in Minutes": 'deep_sleep_in_minutes', 
            "Overall Score": 'overall_score',
            "Readiness Score": 
-           'readiness_score_value'}]
+           'readiness_score_value'}
 
 
 
