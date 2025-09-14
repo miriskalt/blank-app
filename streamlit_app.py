@@ -1,9 +1,12 @@
 import pandas as pd
+import matplotlib.pyplot as plt
+import numpy as np
+
+
 import streamlit as st
 
+
 st.set_page_config(page_title="DS Example", page_icon="🎈")
-
-
 @st.cache_data
 def load_data():
     df = pd.read_csv("sleep_stree_readiness.csv")
@@ -40,5 +43,16 @@ st.line_chart(data=df, y=options[plot_feature], x="Date")
 
 ###### Section 2 all features over entire timespan
 st.subheader("Linegraph of all features over entire timespan")
-st.markdown(df.columns)
 st.line_chart(df, y=[value for value in list(options.values())], x="Date")
+
+
+
+###### Section 3 bar plot
+st.subheader("Research Question 3: What is the avg Readiness Score per Weekday?")
+
+# do compuation of the weekday readiness_score
+
+fig, ax = plt.subplots()
+ax.hist(df, bins=7)
+
+st.pyplot(fig)
