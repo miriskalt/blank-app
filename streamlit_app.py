@@ -21,9 +21,7 @@ st.write(
 )
 
 st.subheader("Linegraph of single feature over entire timespan")
-st.write("
-         The following interactive linegraph visualizes the selected features over the entire timespan of the dataset
-         ")
+st.write("The following interactive linegraph visualizes the selected features over the entire timespan of the dataset")
 
 st.pills("")
 
