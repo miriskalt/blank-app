@@ -49,4 +49,4 @@ st.line_chart(df, y=[value for value in list(options.values())], x="Date")
 
 ###### Section 3 bar plot
 st.subheader("Research Question 3: What is the avg Readiness Score per Weekday?")
-st.bar_chart(df.weekday.value_counts()[['Mon','Tue','Wed','Thu','Fri','Sat','Sun']])
+st.bar_chart(df.weekday.value_counts()[['Mon','Tue','Wed','Thu','Fri','Sat','Sun']], x=['Mon','Tue','Wed','Thu','Fri','Sat','Sun'])
