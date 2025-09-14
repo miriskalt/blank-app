@@ -32,6 +32,6 @@ options = {"Deep Sleep in Minutes": 'deep_sleep_in_minutes',
 
 plot_feature = st.pills("Selected Features", list(options.keys()),selection_mode="single", default="Deep Sleep in Minutes")
 st.markdown(f"The plot now shows: {plot_feature}.")
-st.line_chart(df[options[plot_feature]])
+st.line_chart(data=df, y=options[plot_feature], x="Date")
 
 
