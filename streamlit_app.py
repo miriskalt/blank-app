@@ -53,6 +53,12 @@ st.subheader("Research Question 3: What is the avg Readiness Score per Weekday?"
 # do compuation of the weekday readiness_score
 
 fig, ax = plt.subplots()
-ax.hist(df, bins=7)
+ax.histogram(df,
+                       x="weekday",
+                       y="readiness_score_value",
+                       histfunc='avg',
+                       range_y=[0,100],
+                       category_orders={"weekday":["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]}
 
+                       )
 st.pyplot(fig)
