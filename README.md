@@ -17,3 +17,8 @@ A simple Streamlit app template for you to modify!
    ```
    $ streamlit run streamlit_app.py
    ```
+
+
+3. Visit the website at
+
+https://blank-app-l4qx4tvch0h.streamlit.app/
